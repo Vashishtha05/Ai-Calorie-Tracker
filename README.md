@@ -1,97 +1,121 @@
-#  AI Calorie Tracker
+#  AI Calorie Tracker — Vision-Based Nutrition Analyzer
 
-AI-powered nutrition analysis app built with **Streamlit** and **OpenAI Vision API**. Upload a food image, get instant calorie and macro breakdown.
+<p align="center">
+  <img src="https://img.shields.io/badge/LLM-Vision%20API-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Streamlit-Interactive%20App-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Python-Nutrition%20AI-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Multimodal-Food%20Analysis-green?style=for-the-badge">
+</p>
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red) ![OpenAI](https://img.shields.io/badge/OpenAI-Vision_API-green) ![License](https://img.shields.io/badge/License-MIT-yellow)
-
----
-
-## Features
-
-- **AI Food Recognition** — Upload any food photo and get nutritional data in seconds
-- **9-Nutrient Analysis** — Calories, protein, fat, carbs, fiber, sugar + confidence score
-- **Daily Tracker** — Log meals and view daily totals with interactive charts
-- **Export Data** — Download nutrition results as JSON
-- **Premium UI** — Professional design with color-coded metrics and animations
+<p align="center">
+  A vision-powered nutrition analysis app that estimates calories and macros from food images.
+</p>
 
 ---
 
-## Quick Start
+## 📌 Overview
+
+AI Calorie Tracker is a multimodal application that uses a Vision-enabled LLM to analyze food images and estimate nutritional values.
+
+The system:
+
+- Detects food from uploaded images  
+- Estimates calories and macro breakdown  
+- Tracks daily intake  
+- Visualizes consumption with interactive charts  
+
+---
+
+## ✨ Features
+
+- 📷 AI-based food image recognition  
+- 📊 9-nutrient analysis (calories, protein, fat, carbs, fiber, sugar, etc.)  
+- 📅 Daily meal logging & tracking  
+- 📈 Interactive charts with Plotly  
+- 📤 Export results as JSON  
+- 🎨 Clean Streamlit UI  
+
+---
+
+## ⚙️ Tech Stack
+
+| Technology | Usage |
+|------------|--------|
+| Python | Core development |
+| Streamlit | Web interface |
+| OpenAI Vision API | Image-based nutrition analysis |
+| Pandas | Data processing |
+| Plotly | Data visualization |
+| Pillow | Image handling |
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone Repository
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/yourusername/calorie-tracker.git
-cd calorie-tracker
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Set up API key
-cp .env.example .env
-# Edit .env and add your API key (OpenRouter or OpenAI)
-
-# 4. Run the app
-streamlit run app.py
+git clone https://github.com/yourusername/ai-calorie-tracker.git
+cd ai-calorie-tracker
 ```
 
-The app opens at `http://localhost:8501`
+### 2️⃣ Install Dependencies
 
----
+```bash
+pip install -r requirements.txt
+```
 
-## API Key Setup
+### 3️⃣ Configure API Key
 
-Create a `.env` file from the example:
+Create a `.env` file:
 
-**OpenRouter** (recommended):
+**OpenRouter**
 ```env
-OPENROUTER_API_KEY=sk-or-v1-your-key-here
+OPENROUTER_API_KEY=your-key
 OPENAI_BASE_URL=https://openrouter.ai/api/v1
 ```
 
-**OpenAI**:
+**OpenAI**
 ```env
-OPENAI_API_KEY=sk-your-key-here
+OPENAI_API_KEY=your-key
 ```
 
-Get your key: [OpenRouter](https://openrouter.ai) | [OpenAI](https://platform.openai.com/api-keys)
+### 4️⃣ Run Application
+
+```bash
+streamlit run app.py
+```
+
+App runs at:
+
+```
+http://localhost:8501
+```
 
 ---
 
-## Project Structure
+## 🧠 Workflow
+
+1. User uploads food image  
+2. Image is sent to Vision-enabled LLM  
+3. Model extracts food context  
+4. Nutritional breakdown is generated  
+5. Results are logged and visualized  
+
+---
+
+## 📂 Project Structure
 
 ```
-├── app.py                  # Main Streamlit application
-├── requirements.txt        # Python dependencies
-├── .env.example            # API key template
-├── .gitignore              # Git ignore rules
-├── .streamlit/
-│   └── config.toml         # Streamlit theme config
+├── app.py
+├── requirements.txt
+├── .env.example
+├── .streamlit/config.toml
 └── notebook/
-    └── Build a Calorie Tracker.ipynb   # Original Jupyter notebook
 ```
 
----
-
-## Screenshots
-
-| Upload & Analyze | Nutrition Results | Daily Tracker |
-|:---:|:---:|:---:|
-| Upload any food photo | Color-coded macro breakdown | Track meals with charts |
-
----
-
-## Tech Stack
-
-| Technology | Purpose |
-|---|---|
-| Streamlit | Web UI framework |
-| OpenAI Vision API | Food image recognition |
-| Plotly | Interactive charts |
-| Pandas | Data handling |
-| Pillow | Image processing |
-
----
-
-## License
-
-MIT — free for personal and commercial use.
+## 👨‍💻 Author 
+**Vashishtha Verma** 
+* 🤖 Machine Learning & Generative AI
+* 🧠 Agentic AI Systems
+* 💻 Software Engineering & DSA
