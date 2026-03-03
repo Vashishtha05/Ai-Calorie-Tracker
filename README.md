@@ -1,4 +1,4 @@
-# 🍎 AI Calorie Tracker
+#  AI Calorie Tracker
 
 AI-powered nutrition analysis app built with **Streamlit** and **OpenAI Vision API**. Upload a food image, get instant calorie and macro breakdown.
 
